@@ -1,0 +1,61 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue May 26 20:05:30 2026
+| Host         : LAPTOP-NVV48REL running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 1          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/ir_pwm_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[54]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[55]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[56]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[57]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[58]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[59]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[5]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[60]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[61]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[62]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[63]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[6]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[7]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[8]/CLR,
+design_1_i/gree_ir_axi_0/inst/gree_ir_axi_v1_0_S00_AXI_inst/ir_core/tx_data_reg[9]/CLR
+ (the first 15 of 126 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on ir_pwm relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+

@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue May 26 19:47:33 2026
+# Process ID: 15604
+# Current directory: E:/hardware_curriculum_design/nec_pl_zynq_vrlV0.1
+# Command line: vivado.exe -mode batch -source scripts\ipx_help_tmp.tcl -notrace
+# Log file: E:/hardware_curriculum_design/nec_pl_zynq_vrlV0.1/vivado.log
+# Journal file: E:/hardware_curriculum_design/nec_pl_zynq_vrlV0.1\vivado.jou
+# Running On: LAPTOP-NVV48REL, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 16858 MB
+#-----------------------------------------------------------
+source {scripts\ipx_help_tmp.tcl} -notrace
+ipx::package_project
+
+Description: 
+Package the current project
+
+Syntax: 
+ipx::package_project  [-root_dir <arg>] [-vendor <arg>] [-library <arg>]
+                      [-name <arg>] [-version <arg>] -taxonomy <args>
+                      [-import_files] [-set_current <arg>] [-force]
+                      [-force_update_compile_order]
+                      [-archive_source_project <arg>] [-quiet] [-verbose]
+                      [<component>]
+
+Usage: 
+  Name                           Description
+  ------------------------------------------
+  [-root_dir]                    User specified root directory for 
+                                 component.xml
+  [-vendor]                      User specified vendor of the IP VLNV
+  [-library]                     User specified library of the IP VLNV
+  [-name]                        User specified name of the IP VLNV
+  [-version]                     User specified version of the IP VLNV
+  -taxonomy                      User specified taxonomy for the IP
+  [-import_files]                If true, import remote IP files into the IP 
+                                 structure.
+  [-set_current]                 Set the core as the current core.
+  [-force]                       Override existing packaged component.xml.
+  [-force_update_compile_order]  Force the packager to invoke the old 
+                                 behaviour of reordering and disabling files 
+                                 as necessary (This will override a manually 
+                                 set compile order).
+  [-archive_source_project]      Archives the source project to be used when 
+                                 editing the IP later.
+  [-quiet]                       Ignore command errors
+  [-verbose]                     Suspend message limits during command 
+                                 execution
+  [<component>]                  Core object
+
+Categories: 
+IPServices
+INFO: [Common 17-206] Exiting Vivado at Tue May 26 19:47:35 2026...
